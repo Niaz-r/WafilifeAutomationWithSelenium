@@ -1,25 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-03T04:30:04 BDT" name="Default suite" finished-at="2025-09-03T04:30:18 BDT" duration-ms="13791">
+  <suite started-at="2025-09-04T00:45:46 BDT" name="Automation Test Suite" finished-at="2025-09-04T00:46:19 BDT" duration-ms="33459">
     <groups>
     </groups>
-    <test started-at="2025-09-03T04:30:04 BDT" name="Default test" finished-at="2025-09-03T04:30:18 BDT" duration-ms="13791">
-      <class name="testPackage.LoginTest">
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:testPackage.LoginTest@59662a0b]" started-at="2025-09-03T04:29:54 BDT" name="setupDriver" finished-at="2025-09-03T04:30:04 BDT" duration-ms="10707" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupDriver -->
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:testPackage.LoginTest@59662a0b]" started-at="2025-09-03T04:30:04 BDT" name="openUrl" finished-at="2025-09-03T04:30:09 BDT" duration-ms="4969" status="PASS">
+    <test started-at="2025-09-04T00:45:46 BDT" name="Login and Dashboard Tests" finished-at="2025-09-04T00:46:19 BDT" duration-ms="33459">
+      <class name="testPackage.LekhokOptionTest">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:testPackage.LekhokOptionTest@55183b20]" started-at="2025-09-04T00:46:11 BDT" name="openUrl" finished-at="2025-09-04T00:46:11 BDT" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUrl -->
-        <test-method signature="clickLoginBtn()[pri:1, instance:testPackage.LoginTest@59662a0b]" started-at="2025-09-03T04:30:09 BDT" name="clickLoginBtn" finished-at="2025-09-03T04:30:16 BDT" duration-ms="6334" status="PASS">
+        <test-method signature="selectlekhok()[pri:1, instance:testPackage.LekhokOptionTest@55183b20]" started-at="2025-09-04T00:46:11 BDT" name="selectlekhok" finished-at="2025-09-04T00:46:13 BDT" duration-ms="1653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectlekhok -->
+        <test-method signature="clickNext()[pri:2, instance:testPackage.LekhokOptionTest@55183b20]" started-at="2025-09-04T00:46:13 BDT" name="clickNext" finished-at="2025-09-04T00:46:18 BDT" duration-ms="4744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickNext -->
+        <test-method signature="clickAuthor()[pri:3, instance:testPackage.LekhokOptionTest@55183b20]" started-at="2025-09-04T00:46:18 BDT" name="clickAuthor" finished-at="2025-09-04T00:46:19 BDT" duration-ms="1348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickAuthor -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testPackage.LekhokOptionTest@55183b20]" started-at="2025-09-04T00:46:19 BDT" name="afterClass" finished-at="2025-09-04T00:46:19 BDT" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testPackage.LekhokOptionTest -->
+      <class name="testPackage.LoginTest">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:testPackage.LoginTest@72967906]" started-at="2025-09-04T00:45:40 BDT" name="setupDriver" finished-at="2025-09-04T00:45:46 BDT" duration-ms="5895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:testPackage.LoginTest@72967906]" started-at="2025-09-04T00:45:46 BDT" name="openUrl" finished-at="2025-09-04T00:45:54 BDT" duration-ms="8104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="clickLoginBtn()[pri:1, instance:testPackage.LoginTest@72967906]" started-at="2025-09-04T00:45:54 BDT" name="clickLoginBtn" finished-at="2025-09-04T00:46:00 BDT" duration-ms="5605" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickLoginBtn -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:2, instance:testPackage.LoginTest@59662a0b]" started-at="2025-09-03T04:30:16 BDT" name="login" data-provider="loginData" finished-at="2025-09-03T04:30:18 BDT" duration-ms="1781" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:2, instance:testPackage.LoginTest@72967906]" started-at="2025-09-04T00:46:00 BDT" name="login" data-provider="loginData" finished-at="2025-09-04T00:46:10 BDT" duration-ms="10828" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,15 +57,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testPackage.LoginTest@59662a0b]" started-at="2025-09-03T04:30:18 BDT" name="afterClass" finished-at="2025-09-03T04:30:18 BDT" duration-ms="608" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testPackage.LoginTest@72967906]" started-at="2025-09-04T00:46:10 BDT" name="afterClass" finished-at="2025-09-04T00:46:11 BDT" duration-ms="807" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testPackage.LoginTest@59662a0b]" started-at="2025-09-03T04:30:18 BDT" name="tearDown" finished-at="2025-09-03T04:30:19 BDT" duration-ms="257" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testPackage.LoginTest@72967906]" started-at="2025-09-04T00:46:19 BDT" name="tearDown" finished-at="2025-09-04T00:46:20 BDT" duration-ms="606" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testPackage.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Login and Dashboard Tests -->
+  </suite> <!-- Automation Test Suite -->
 </testng-results>

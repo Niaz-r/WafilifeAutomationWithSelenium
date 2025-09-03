@@ -26,8 +26,9 @@ public class LoginPage extends CommonUse{
 	 
 	 
 	 @FindBy(xpath = "//*[@id=\"username\"]")WebElement emailBox;
-	
 	 @FindBy(xpath = "//*[@id=\"password\"]")WebElement passBox;
+	 @FindBy(xpath = "//*[@id=\"customer_login\"]/div[2]/form/p[3]/input[3]")WebElement submitbtn;
+	 
 	 
 	 
 	 public void login(String email, String pass) throws Exception {
@@ -37,7 +38,7 @@ public class LoginPage extends CommonUse{
 				 
 				 emailBox.clear();
 				 emailBox.sendKeys(email);
-				 sleep(1000);
+				// sleep(1000);
 				 test.pass("<p style=\"color:#00FF00; font-size:13px\"><b>Email Text Field Founded " + "</b></p>");
 			}
 			
@@ -57,6 +58,9 @@ public class LoginPage extends CommonUse{
 				passBox.clear();
 				passBox.sendKeys(pass);
 				 test.pass("<p style=\"color:#00FF00; font-size:13px\"><b>Password Text Field Founded " + "</b></p>");
+				submitbtn.click();
+				 test.pass("<p style=\"color:#00FF00; font-size:13px\"><b>Login Successfull" + "</b></p>");
+				 
 			}
 			
 		} catch (Exception e) {
@@ -70,6 +74,7 @@ public class LoginPage extends CommonUse{
 			    String screenshotPath = GetScreenShots.capture(PageDriver.getCurrentDriver(), passTextBox);
 			    test.fail("Screenshot:", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 		}
+		 
 		
 	}
 

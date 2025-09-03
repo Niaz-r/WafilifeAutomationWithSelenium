@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Automation Test Suite" parallel="false">
+  
+    <!-- Define test block -->
+    <test name="Login and Dashboard Tests">
+
+        <!-- Point to the classes where your @Test methods exist -->
+        <classes>
+            <class name="testPackage.LoginTest"/>
+		    <class name="testPackage.LekhokOptionTest"/>
+
+           
+        </classes>
+
+    </test>
+
+</suite>
+ 

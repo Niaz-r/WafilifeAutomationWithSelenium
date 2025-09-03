@@ -53,6 +53,8 @@ public class LoginTest extends BaseDriver {
 		LoginPage loginPage = new LoginPage(ch1);
 		
 		loginPage.login(email, pass);
+		
+		
 	}
 	
 	

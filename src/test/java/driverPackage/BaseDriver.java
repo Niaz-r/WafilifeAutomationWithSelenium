@@ -22,7 +22,7 @@ public class BaseDriver extends PageDriver {
 		        driver = new ChromeDriver();
 		        
 		        PageDriver.getInstance().setDriver(driver);
-		        driver.get(url);
+		     //   driver.get(url);
 		        
 		    }
 		    
